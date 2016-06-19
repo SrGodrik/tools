@@ -1,0 +1,5 @@
+gnureadline
+requests
+paramiko
+beautifulsoup4
+pysnmp
