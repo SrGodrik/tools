@@ -1,0 +1,159 @@
+# Login/password pair file (Basic Authentication)
+# pairs splitted by <tab>'s [0x09]
+...other strings are just ignored
+
+# ASCII/ANSI only, no unicode!
+
+# P.S. avoid duplicated pairs, Router Scan doesn't check for it
+
+// default pairs
+admin	<empty>
+admin	admin
+admin	1234
+admin	password
+Admin	Admin
+<empty>	admin
+root	<empty>
+root	admin
+root	root
+root	public
+admin	nimda
+admin	adminadmin
+admin	gfhjkm
+admin	airlive
+airlive	airlive
+<empty>	root
+<empty>	<empty>
+support	<empty>
+support	support
+super	super
+enable  system
+shell   sh
+root    xc3511
+root    vizxv
+root    xmhdipc
+root    123456
+root    888888
+support support
+root    54321
+root    juantech
+root    anko
+root    12345
+root    default
+admin   smcadmin
+ubnt    ubnt
+root    ikwb
+root    Zte521
+supervisor supervisor
+admin   admin1234
+super	APR@xuniL
+super	zxcvbnm,./
+
+// ISP specific
+admin	onlime
+super	asong
+admin	mts
+mts	mts
+telecomadmin	admintelecom
+mgts	mtsoao
+admin	Uq-4GIt3M
+<empty>	aDm1n$TR8r
+kyivstar	kyivstar
+admin	0508780503
+telekom	telekom
+superadmin	Is$uper@dmin
+admin	dPZb4GJTu9
+admin	2w4f6n8k
+admin	szt
+admin	radmin
+admin	RTadmin1979
+engineer	amplifier
+
+// more pairs added by Stas'M
+admin	1
+admin	123
+admin	0000
+admin	00000000
+admin	12345
+admin	123456
+admin	1234567
+admin	12345678
+admin	123456789
+admin	1234567890
+admin	qwerty
+admin	beeline
+admin	beeline2013
+admin	iyeh
+admin	ghbdtn
+admin	admin225
+admin	rombik1
+admin	ho4uku6at
+admin	juklop
+admin	free
+admin	inet
+admin	internet
+admin	asus
+admin	root
+admin	ADMIN
+admin	adsl
+admin	adslroot
+admin	adsladmin
+admin	Ferum
+admin	Ferrum
+admin	FERUM
+admin	FERRUM
+admin	Kendalf9
+admin	263297
+admin	590152
+admin	21232
+admin	adn8pzszk
+admin	amvqnekk
+admin	biyshs9eq
+admin	e2b81d_1
+admin	Dkdk8e89
+admin	flvbyctnb
+admin	qweasdOP
+admin	EbS2P8
+admin	FhF8WS
+admin	ZmqVfo
+admin	ZmqVfo1
+admin	ZmqVfo2
+admin	ZmqVfo3
+admin	ZmqVfo4
+admin	ZmqVfoVPN
+admin	ZmqVfoSIP
+admin	ZmqVfoN1
+admin	ZmqVfoN2
+admin	ZmqVfoN3
+admin	ZmqVfoN4
+admin	9f4r5r79//
+admin	airocon
+admin	zyxel
+adsl	realtek
+osteam	5up
+root	toor
+ZXDSL	ZXDSL
+<empty>	support
+
+// Cisco pairs
+<empty>	Cisco
+Cisco	Cisco
+<empty>	cisco
+cisco	cisco
+admin	default
+admin	cisco
+admin	changeme
+<empty>	c
+<empty>	cc
+<empty>	Cisco router
+<empty>	letmein
+<empty>	_Cisco
+enable	cisco
+pnadmin	pnadmin
+root	attack
+root	Cisco
+
+// user access
+user	<empty>
+user	user
+<empty>	user

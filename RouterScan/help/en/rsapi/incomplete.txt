@@ -1,0 +1,143 @@
+Internal APIs (in alphabetic order, incomplete):
+
+- function DecodeBase64(AStr: AnsiString): AnsiString;
+Decodes string using Base64 algorithm:
+AStr - source ANSI string
+Result - resulting ANSI string
+--------------
+- function Deflate(var InStream, OutStream: TMemoryStream): Boolean;
+Decompresses the stream using Deflate algorithm
+InStream - input memory stream
+OutStream - output memory stream
+Result - decompression succeeds
+--------------
+- function DeleteBetween(S, First, Last: String): String;
+Returns string between First and Last substrings:
+S - source string
+First - substring
+Last - substring
+Result - resulting string
+--------------
+- function GetHTTP(URL: String; var Response: String;
+    var Code: Integer; Retry, Redir: Byte; var ServerName: String;
+    UseAuth: Boolean; Username, Password: String): Boolean;
+Makes GET HTTP request (Indy):
+URL - full URL
+Response - response body string
+Code - resulting HTTP code
+Retry - retry tries count on error (iterational)
+Redir - maximum redirections count (recursive)
+ServerName - resulting server name
+UseAuth - send Basic authentication header
+Username - Basic auth username
+Password - Basic auth password
+Result - request succeded
+--------------
+- function GetHTTPStream(URL: String; var Response: TMemoryStream;
+    var Code: Integer; Retry, Redir: Byte; var ServerName: String;
+    UseAuth: Boolean; Username, Password: String): Boolean;
+Makes GET HTTP request (Indy):
+URL - full URL
+Response - response body memory stream
+Code - resulting HTTP code
+Retry - retry tries count on error (iterational)
+Redir - maximum redirections count (recursive)
+ServerName - resulting server name
+UseAuth - send Basic authentication header
+Username - Basic auth username
+Password - Basic auth password
+Result - request succeded
+--------------
+- function HexInvToString(Hex: String): AnsiString;
+Converts hexadecimal string to ANSI string with inversion:
+Hex - source string
+Result - resulting ANSI string
+--------------
+- procedure LZSDecompress(Input: TBytes; var Output: TBytes);
+Decompresses the data using LZS algorithm
+Input - input data
+Output - output data
+--------------
+- procedure ParseHTMLDec(var S: String);
+Replaces special HTML characters in string (decimal encoded)
+S - source string
+--------------
+- procedure ParseHTMLHex(var S: String);
+Replaces special HTML characters in string (hexadecimal encoded)
+S - source string
+--------------
+- function PostHTTP(URL: String; var RequestForm: TStringList;
+    var Response: String; var Code: Integer; Retry, Redir: Byte;
+    var ServerName: String; UseAuth: Boolean; Username, Password: String): Boolean;
+Makes POST HTTP request (Indy):
+URL - full URL
+RequestForm - form query list
+Response - response body string
+Code - resulting HTTP code
+Retry - retry tries count on error (iterational)
+Redir - maximum redirections count (recursive)
+ServerName - resulting server name
+UseAuth - send Basic authentication header
+Username - Basic auth username
+Password - Basic auth password
+Result - request succeded
+--------------
+- function PostHTTPStreamEx(URL: String; var Request: TMemoryStream; ContentType: String;
+    var Response: TMemoryStream; var Code: Integer; Retry, Redir: Byte;
+    var ServerName: String; UseAuth: Boolean; Username, Password: String): Boolean;
+Makes POST HTTP request (Indy):
+URL - full URL
+Request - request body memory stream
+ContentType - content type header
+Response - response body memory stream
+Code - resulting HTTP code
+Retry - retry tries count on error (iterational)
+Redir - maximum redirections count (recursive)
+ServerName - resulting server name
+UseAuth - send Basic authentication header
+Username - Basic auth username
+Password - Basic auth password
+Result - request succeded
+--------------
+- function PtrHex(P: Pointer; Sz: Cardinal): AnsiString; overload;
+- function PtrHex(P: Cardinal; Sz: Cardinal): AnsiString; overload;
+Retrieves hexadecimal string from specified memory buffer:
+P - buffer pointer
+Sz - size in bytes
+Result - resulting hexadecimal string
+--------------
+- function PtrStr(P: Pointer; Sz: Cardinal): AnsiString; overload;
+- function PtrStr(P: Cardinal; Sz: Cardinal): AnsiString; overload;
+Retrieves ANSI string from specified memory buffer:
+P - buffer pointer
+Sz - size in bytes
+Result - resulting ANSI string
+--------------
+- procedure SetTableCell(Name, Value: String); 
+Writes to table cell:
+Name - column internal name
+Value - plain text value
+--------------
+- procedure SetTableNoWireless;
+Writes built-in values for wired devices to table.
+--------------
+- procedure StreamToAnsi(var M: TMemoryStream; var A: AnsiString);
+Converts memory stream to ANSI string:
+M - source memory stream
+A - resulting ANSI string
+--------------
+- procedure TrimString(var S: String);
+Trim trailing spaces in string:
+S - source and resulting string
+--------------
+- function WEPBits(Pasw: String; Shared: Boolean = False): String;
+Generates WEP security string:
+Pasw - encryption key
+Shared - authentication type
+Result - resulting security string
+--------------
+- procedure WEPHexToAnsi(var Pasw: String); overload;
+- procedure WEPHexToAnsi(var Pasw: AnsiString); overload;
+Converts WEP encryption key to ANSI string if available:
+Pasw - encryption key
+--------------
